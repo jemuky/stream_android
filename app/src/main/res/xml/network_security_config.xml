@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<network-security-config>-->
+<!--    <base-config cleartextTrafficPermitted="true" />-->
+<!--&lt;!&ndash;    <domain-config cleartextTrafficPermitted="true" >&ndash;&gt;-->
+<!--&lt;!&ndash;        <domain includeSubdomains="true">192.168.69.171</domain>&ndash;&gt;-->
+<!--&lt;!&ndash;        <domain includeSubdomains="true">192.168.99.222</domain>&ndash;&gt;-->
+<!--&lt;!&ndash;    </domain-config>&ndash;&gt;-->
+<!--</network-security-config>-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+

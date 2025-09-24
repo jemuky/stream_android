@@ -1,0 +1,71 @@
+<resources>
+    <!--  weather  -->
+    <string name="app_name">stream</string>
+    <string name="select_area">选择地区</string>
+    <string name="search_area">搜索地区</string>
+    <string name="future_weather">预报天气</string>
+    <string name="province">省：</string>
+    <string name="city">市：</string>
+    <string name="region">区：</string>
+    <string name="weather">天气：</string>
+    <string name="wind_direction">风向：</string>
+    <string name="humidity">湿度：</string>
+    <string name="temperature">温度：</string>
+    <string name="degree">℃</string>
+    <string name="wind_power">风力等级：</string>
+    <string name="report_time">发布时间：</string>
+
+    <string name="time">时间</string>
+    <string name="date">日期</string>
+    <string name="temperature2">温度</string>
+    <string name="weather2">天气</string>
+    <string name="region2">地区</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+    <string name="weather_action">android.appwidget.action.APPWIDGET_UPDATE</string>
+    <string name="weather_key">高德天气app key</string>
+    <string name="weather_key_prefix">weather_key: </string>
+
+    <!--  main  -->
+    <string name="weather_text">天气</string>
+    <string name="listview_demo">listview_demo</string>
+    <string name="transform_text">文本传输</string>
+    <string name="transform_text_ws">文本ws传输</string>
+    <string name="transform_file">文件传输</string>
+    <string name="my_vps">我的VPS</string>
+    <string name="trans_base_url_hint">http://localhost:4000/</string>
+    <string name="clear">清除</string>
+
+    <!-- transform -->
+    <string name="send">send</string>
+    <string name="secondside">对方: </string>
+    <string name="self">自己: </string>
+    <string name="newline">\n</string>
+    <string name="trans_text_hint">输入</string>
+    <string name="trans_file_select_file">选择文件</string>
+
+    <!--  vps  -->
+    <string name="start_vps">启动VPS</string>
+    <string name="stop_vps">停止VPS</string>
+    <string name="restart_vps">重启VPS(api无作用)</string>
+    <string name="vps_status">查看vps状态</string>
+    <string name="audit_log">查看VPS审计日志</string>
+    <string name="vps_response">请求结果在这里</string>
+    <string name="veid_hint">veid(bwg api)</string>
+    <string name="vps_api_key_hint">api key(bwg api)</string>
+    <string name="veid_prefix">veid: </string>
+    <string name="vps_api_key_prefix">vps_api_key: </string>
+
+    <!--  listview demo  -->
+    <string name="delete">删除</string>
+    <string name="add">新增</string>
+    <string name="page">当前页</string>
+    <string name="lv_dl_left">left</string>
+    <string name="lv_dl_right">right</string>
+    <string name="lv_dl_ok">确定</string>
+    <string name="lbtn"><![CDATA[<]]></string>
+    <string name="rbtn"><![CDATA[>]]></string>
+    <string name="transform_cur_text">当前地址:</string>
+</resources>

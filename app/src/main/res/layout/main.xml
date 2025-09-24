@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="进 天气 页面时自动保存"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/main_amap_key_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/weather_key"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:minWidth="32dp"
+                        android:textSize="@dimen/global_normal_text_size"></AutoCompleteTextView>
+
+                    <Button
+                        android:id="@+id/main_clear_amap_key_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></Button>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/main_amap_key_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:padding="5dp"
+                    android:text="@string/weather_key_prefix"
+                    android:textSize="11sp"></TextView>
+
+
+                <Button
+                    android:id="@+id/main_weather_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/weather_text"></Button>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/main_lv_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/listview_demo"></Button>
+
+            <!-- 以下文本、文件传输的地址 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="进 以下三个任意一个 页面时自动保存"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/main_base_url_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/trans_base_url_hint"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></AutoCompleteTextView>
+
+                    <Button
+                        android:id="@+id/main_clear_base_url_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/transform_cur_text"
+                        android:textSize="11sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/main_base_url_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textSize="11sp"></TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/main_transform_text_ws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/transform_text_ws"></Button>
+
+                <Button
+                    android:id="@+id/main_transform_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/transform_text"></Button>
+
+                <Button
+                    android:id="@+id/main_transform_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/transform_file"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="进 我的vps 页面时自动保存"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/main_veid_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/veid_hint"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></AutoCompleteTextView>
+
+                    <Button
+                        android:id="@+id/main_clear_veid_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/main_api_key_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/vps_api_key_hint"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></AutoCompleteTextView>
+
+                    <Button
+                        android:id="@+id/main_clear_api_key_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/global_normal_text_size"></Button>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/main_veid_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/veid_prefix"
+                    android:textSize="11sp"></TextView>
+
+                <TextView
+                    android:id="@+id/main_vps_api_key_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="@string/vps_api_key_prefix"
+                    android:textSize="11sp"></TextView>
+
+                <Button
+                    android:id="@+id/main_my_vps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:text="@string/my_vps"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

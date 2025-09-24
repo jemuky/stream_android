@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/vps_restart"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_vps"
+            >
+        </Button>
+        <Button
+            android:id="@+id/vps_status"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/vps_status"
+            >
+        </Button>
+        <Button
+            android:id="@+id/vps_audit_log"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/audit_log"
+            >
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/vps_start"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_vps"
+            >
+        </Button>
+        <Button
+            android:id="@+id/vps_stop"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_vps"
+            >
+        </Button>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/vps_progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/vps_resp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:scrollHorizontally="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:hint="@string/vps_response"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+</LinearLayout>

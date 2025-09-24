@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/trans_file_select_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/trans_file_select_file"
+        android:textColor="@color/black"
+        android:textSize="@dimen/global_normal_text_size">
+    </Button>
+
+    <TextView
+        android:id="@+id/trans_file_select_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/global_normal_text_size">
+    </TextView>
+
+    <Button
+        android:id="@+id/trans_file_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/send"
+        android:textColor="@color/black"
+        android:textSize="@dimen/global_normal_text_size">
+    </Button>
+
+</LinearLayout>

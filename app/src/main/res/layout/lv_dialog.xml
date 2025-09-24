@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/lv_dl_left"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="@string/lv_dl_left"
+        android:inputType="text"
+        android:autofillHints="no"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/lv_dl_right"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/lv_dl_right"
+        android:inputType="text"
+        android:autofillHints="no"
+        android:layout_marginTop="10dp"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/lv_dl_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lv_dl_ok" />
+
+</LinearLayout>

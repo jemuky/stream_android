@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/lv_btn_last_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:text="@string/lbtn"
+            >
+        </Button>
+        <Button
+            android:id="@+id/lv_btn_next_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/rbtn"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lv_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="@string/page"
+        android:textSize="@dimen/global_normal_text_size"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/lv_add"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/add"
+        android:textSize="@dimen/global_normal_text_size"
+        android:textColor="@color/blue"
+        >
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="jymk.stream.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Stream"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+        <receiver
+            android:name="jymk.stream.widget.WeatherWidget"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <category android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weather_widget_info" />
+        </receiver>
+
+        <activity
+            android:name="jymk.stream.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="jymk.stream.activity.WeatherActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="jymk.stream.activity.TransformFileActivity">
+        </activity>
+        <activity
+            android:name="jymk.stream.activity.TransformTextActivity">
+        </activity>
+        <activity
+            android:name="jymk.stream.activity.TransformTextWSActivity">
+        </activity>
+        <activity
+            android:name="jymk.stream.activity.LVDemoActivity">
+        </activity>
+        <activity
+            android:name="jymk.stream.activity.MyVPSActivity">
+        </activity>
+    </application>
+
+</manifest>
